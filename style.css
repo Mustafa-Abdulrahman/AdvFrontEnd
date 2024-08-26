@@ -1,0 +1,505 @@
+/*------------------- Normlization */
+:root {
+    --main-padding: 16px;
+    --main-margin: 16px;
+    --main-transition: 0.3s;
+    --section-padding: 70px;
+    --secound-Padding: 32px
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+
+
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/*------------------- Normlization */
+
+nav {
+    background-color: white;
+    box-shadow: 0 3px 16px 4px #0000001a
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+nav .container .img {
+    width: 100px
+}
+
+nav .container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li a,
+ul li button {
+    padding: var(--main-padding)
+}
+
+/* Start Lnading */
+.landing {
+    height: calc(100vh - 100px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.200), rgba(0, 0, 0, 0.200)), url("./Images/Montage-Beverly-Hills.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing .container {
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 6px 11px #00000056;
+    padding: var(--main-padding);
+}
+
+.landing .container h1,
+.landing .container p {
+    margin-bottom: var(--main-margin)
+}
+
+
+
+.landing .container button {
+    padding: var(--main-padding) 32px;
+    border: 3px solid white;
+    ;
+    background-color: transparent;
+    color: white;
+    transition: var(--main-transition);
+    cursor: pointer
+}
+
+.landing .container button:hover {
+    background-color: black;
+}
+
+/* End Landing */
+
+/* Start Cart  */
+
+section.card {
+    padding: var(--section-padding) 0;
+}
+
+section.card .container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem
+}
+
+section.card .container .box {
+    border: 2px solid rgb(86, 86, 86)
+}
+
+section.card .container .img {
+    width: 100%
+}
+
+section.card .container .content {
+    padding: var(--main-padding)
+}
+
+section.card .container .content h2,
+section.card .container .content p {
+    margin-bottom: var(--main-margin);
+}
+
+
+
+section.card .container .content span {}
+
+section.card .container .content div {
+    margin-top: var(--main-margin);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--main-padding);
+    border-top: 2px solid black
+}
+
+section.card .container .content div span {}
+
+/* End Cart  */
+
+/* Start App */
+section.app {
+    padding: var(--section-padding) 0;
+    background-color: #cdcdcd;
+}
+
+section.app .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+
+
+section.app .container .content h2,
+section.app .container .content p {
+    margin: var(--main-margin) 0
+}
+
+/* discount */
+section.discount {
+    height: 40vh;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.250), rgba(29, 29, 29, 0.250)), url("./Images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center;
+    line-height: 40vh */
+}
+
+section.discount div {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; */
+    text-align: center;
+    color: white;
+
+}
+
+section.discount div p {
+    margin-bottom: var(--main-margin);
+}
+
+section.discount div h3 {
+    font-size: 2rem;
+    margin: var(--main-margin) 0
+}
+
+section.discount div h3 span {
+    color: red
+}
+
+section.discount div button {
+    background-color: transparent;
+    ;
+    padding: var(--main-padding) var(--secound-Padding);
+    color: white;
+    border: 2px solid white
+}
+
+/* Book  */
+section.book {
+    padding: var(--section-padding) 0
+}
+
+section.book .container .box-container {
+    display: flex;
+    align-items: Center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+section.book .container .box-container .box {
+    height: 30vh;
+    padding: var(--main-padding);
+    color: white;
+
+}
+
+
+section.book .container .box-container.first .box {
+    width: calc((100% / 2) - 1rem)
+}
+
+
+section.book .container .box-container.first .box:nth-child(1) {
+    background-image: url("./Images/a1.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+
+}
+
+section.book .container .box-container.first .box:nth-child(2) {
+    background-image: url("./Images/a2.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+section.book .container .box-container.last {
+    margin-top: var(--main-margin)
+}
+
+section.book .container .box-container.last .box {
+    width: calc((100% / 3) - 2rem);
+
+}
+
+
+section.book .container .box-container.last .box:nth-child(1) {
+    background-image: url("./Images/a2.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+section.book .container .box-container.last .box:nth-child(2) {
+    background-image: url("./Images/a2.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+section.book .container .box-container.last .box:nth-child(3) {
+    background-image: url("./Images/a2.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+section.book .container .box-container .box p {}
+
+section.book .container .box-container .box h3 {}
+
+section.book .container .box-container .box span {}
+
+section.book .container .box-container .box button {
+    display: block;
+    padding: var(--main-padding) var(--secound-Padding);
+    margin-top: var(--main-margin);
+    background-color: transparent;
+    border: 2px solid white;
+    color: white
+}
+
+
+/* Start Footer */
+.footer {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    padding: var(--section-padding) 0
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .container div {}
+
+.footer .container div h2 {
+    padding: var(--main-padding) 0;
+    position: relative;
+    margin-bottom: var(--main-margin);
+}
+
+.footer .container div h2::after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white
+}
+
+footer {
+    padding: 2rem;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    color: white;
+}
+
+/* Media  */
+
+@media (min-width:768px) {
+    .container {
+        width: 740px
+    }
+
+    nav .container {
+        flex-flow: column
+    }
+
+    section.card .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+    section.app .container {
+        flex-flow: column;
+        text-align: center;
+    }
+
+    section.book .container .box-container .box {
+        height: 10vh;
+
+    }
+
+    .footer .container {
+        flex-flow: column;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        width: 740px
+    }
+
+    nav .container {
+        flex-flow: column
+    }
+
+    .landing .container {
+        width: 80%
+    }
+
+    section.card .container {
+        display: block;
+
+    }
+
+    section.card .container .box {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: var(--main-margin)
+    }
+
+    section.app .container {
+        flex-flow: column;
+        text-align: center;
+    }
+
+    section.book .container .box-container .box {
+        height: 10vh;
+
+    }
+
+    .footer .container {
+        flex-flow: column;
+    }
+
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px
+    }
+
+    nav .container {
+        flex-flow: row
+    }
+
+    section.app .container {
+        flex-flow: row;
+        text-align: left;
+    }
+
+    .footer .container {
+        flex-flow: row;
+    }
+
+    section.book .container .box-container .box {
+        height: 30vh;
+
+    }
+
+}
+
+@media (min-width:1170px) {
+    .container {
+        width: 1140px
+    }
+
+    nav .container {
+        flex-flow: row
+    }
+
+    section.app .container {
+        flex-flow: row;
+        text-align: left;
+    }
+
+    .footer .container {
+        flex-flow: row;
+    }
+
+    section.book .container .box-container .box {
+        height: 30vh;
+
+    }
+}
+
+section.card {
+    position: relative;
+}
+
+section.card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1;
+    background-color: rgb(0, 85, 160);
+    color: white;
+    padding: 0 var(--section-padding)
+}
+
+section.card .overlay .img {
+    width: 70%
+}
+
+.close {
+    display: block;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    font-weight: bold;
+    cursor: pointer;
+}
